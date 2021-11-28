@@ -31,10 +31,10 @@ class Microwave {
         total += 105 * increaseFactor;
         break;
     }
-    int min = (int) (total / 60);
-    int sec = total % 60;
+    final int min = (int) (total / 60);
+    final int sec = total % 60;
     System.out.printf("It takes %s to reheat %s %s(s).\n",
                      min != 0 ? min + " minutes and " + sec + " seconds" : total + " seconds",
-                    count, item);
+                     count, item);
   }
 }
