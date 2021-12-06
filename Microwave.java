@@ -21,6 +21,7 @@ class Microwave {
     int count = itemObj.nextInt();
     // Calculates multiplier based on the quantity
     double increaseFactor = (count != 1 ? (count == 2 ? 1.5 : 2) : 1);
+    // Calculate the time
     switch (item) {
       case "sub":
         total += 60 * increaseFactor;
